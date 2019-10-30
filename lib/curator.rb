@@ -27,7 +27,11 @@ class Curator
   end
 
   def find_photographs_by_artist(artist)
-    artist = find_artist_by_id
-      require "pry"; binding.pry
+    find_artist = @artists.find_all do |artist|
+      artist.id
+      find_photo = @photographs.find_all do |photo|
+        photo.id
+
+    end
   end
 end

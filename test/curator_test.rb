@@ -99,7 +99,7 @@ class CuratorTest < Minitest::Test
     @curator.add_photograph(@photo_3)
     @curator.add_photograph(@photo_4)
 
-    assert_equal [@photo_3], @curator.find_photographs_by_artist(@artist_3)
+    assert_equal [@photo_3, @photo_4], @curator.find_photographs_by_artist(@artist_3)
   end
 
 end
